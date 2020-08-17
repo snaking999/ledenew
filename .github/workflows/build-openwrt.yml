@@ -124,7 +124,7 @@ jobs:
         path: openwrt/bin
 
     - name: Upload config directory
-      uses: actions/upload-artifact@master
+      uses: actions/upload-artifact@main
       if: steps.compile.outputs.status == 'success' && env.UPLOAD_BIN_DIR == 'true'
       with:
         name: OpenWrt_config${{ env.DEVICE_NAME }}${{ env.FILE_DATE }}
