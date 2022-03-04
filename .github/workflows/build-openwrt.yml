@@ -90,11 +90,14 @@ jobs:
         TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
 
+    - name: Copy config1
+      run: cp openwrt/.config openwrt/bin
+      
     - name: Upload config file1
       uses: actions/upload-artifact@main
       with:
         name: OpenWrt_config
-        path: openwrt/.config
+        path: openwrt/bin/.config
         
     - name: Download package
       id: package
