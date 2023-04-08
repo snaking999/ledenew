@@ -17,4 +17,6 @@
 #sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
 sed -i '$a src-git kenzok8 https://github.com/kenzok8/openwrt-packages' feeds.conf.default
 sed -i '$a src-git small https://github.com/kenzok8/small package/small' feeds.conf.default
+sed -i '$a src-git scst https://github.com/tobiaswaldvogel/openwrt-addpack/tree/master/scst' feeds.conf.default
+sed -i '$a src-git luci-app-scst https://github.com/tobiaswaldvogel/openwrt-addpack/tree/master/luci-app-scst' feeds.conf.default
 #svn checkout https://github.com/WYC-2020/lede/trunk/package/kernel/igb-intel package/kernel/igb-intel
